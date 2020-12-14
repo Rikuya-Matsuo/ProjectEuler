@@ -40,7 +40,7 @@
       <Filter>ソース ファイル\Task</Filter>
     </ClCompile>
     <ClCompile Include="Task8.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>ソース ファイル\Task</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -63,7 +63,7 @@
       <Filter>ヘッダー ファイル\Task</Filter>
     </ClInclude>
     <ClInclude Include="Task8.h">
-      <Filter>ヘッダー ファイル</Filter>
+      <Filter>ヘッダー ファイル\Task</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
