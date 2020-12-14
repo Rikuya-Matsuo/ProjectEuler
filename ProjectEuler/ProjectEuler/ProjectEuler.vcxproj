@@ -126,12 +126,14 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Task5.cpp" />
     <ClCompile Include="Task6.cpp" />
+    <ClCompile Include="Task7.cpp" />
     <ClCompile Include="TaskBase.cpp" />
     <ClCompile Include="TaskFactory.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Task5.h" />
     <ClInclude Include="Task6.h" />
+    <ClInclude Include="Task7.h" />
     <ClInclude Include="TaskBase.h" />
     <ClInclude Include="TaskFactory.h" />
     <ClInclude Include="TaskHeader.h" />
