@@ -39,6 +39,9 @@
     <ClCompile Include="Task7.cpp">
       <Filter>ソース ファイル\Task</Filter>
     </ClCompile>
+    <ClCompile Include="Task8.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TaskBase.h">
@@ -58,6 +61,9 @@
     </ClInclude>
     <ClInclude Include="Task7.h">
       <Filter>ヘッダー ファイル\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="Task8.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
