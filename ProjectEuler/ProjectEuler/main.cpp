@@ -3,7 +3,7 @@
 
 int main(int argc, char ** argv)
 {
-	const uint16_t id = 5;
+	const uint16_t id = 6;
 	TaskBase * task = TASK_FACTORY.Create(id);
 
 	if (task)
