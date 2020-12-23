@@ -27,6 +27,10 @@ TaskBase * TaskFactory::Create(uint16_t id)
 		ret = new Task9();
 		break;
 
+	case 10:
+		ret = new Task10();
+		break;
+
 	default:
 		break;
 	}
