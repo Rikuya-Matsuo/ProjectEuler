@@ -2,25 +2,53 @@
 
 Task10::Task10()
 {
+	mThreads = new std::thread[CheckPrimeTask::mThreadMass];
+
+	mTaskData = new CheckPrimeTask[CheckPrimeTask::mThreadMass];
+
+	for (size_t i = 0; i < CheckPrimeTask::mThreadMass; ++i)
+	{
+		std::thread th(CheckPrimeTask::Func, std::ref(mTaskData[i]), 2 + i, CheckPrimeTask::mThreadMass, mBelow);
+
+		mThreads[i].swap(th);
+	}
 }
 
 Task10::~Task10()
 {
+	delete[] mThreads;
+	delete[] mTaskData;
 }
 
 void Task10::Run()
 {
-	const size_t below = 2000000;
-
-	size_t cnt = 0;
-
-	// 素数のみをチェックしたいので、iの初期値は2
-	for (size_t i = 2; i < below; ++i)
+	// 全スレッドの処理が終わるまで待つ
+	size_t taskFinCnt = 0;
+	while (taskFinCnt != CheckPrimeTask::mThreadMass)
 	{
-		std::cout << "Checking\t\t" << i << std::endl;
+		taskFinCnt = 0;
 
-		cnt += (IsPrimeNumber(i)) ? i : 0;
+		for (size_t i = 0; i < CheckPrimeTask::mThreadMass; ++i)
+		{
+			taskFinCnt += mTaskData[i].mFinishFlag;
+		}
 	}
+
+	for (size_t i = 0; i < CheckPrimeTask::mThreadMass; ++i)
+	{
+		mThreads[i].join();
+	}
+
+	// タスクデータに記録された素数を合算していく
+	size_t cnt = 0;
+	for (size_t i = 0; i < CheckPrimeTask::mThreadMass; ++i)
+	{
+		for (auto elem : mTaskData[i].mPrimes)
+		{
+			cnt += elem;
+		}
+	}
+
 
 	std::cout << cnt << std::endl;
 }
@@ -37,4 +65,35 @@ bool Task10::IsPrimeNumber(size_t num)
 	}
 
 	return true;
+}
+
+std::mutex Task10::CheckPrimeTask::mIOMutex;
+
+const size_t Task10::CheckPrimeTask::mThreadMass = std::thread::hardware_concurrency();
+
+Task10::CheckPrimeTask::CheckPrimeTask():
+	mFinishFlag(false)
+{
+
+}
+
+void Task10::CheckPrimeTask::Func(CheckPrimeTask& ins, size_t start, size_t interval, size_t below)
+{
+	size_t num = start;
+
+	for (; num < below; num += interval)
+	{
+		{
+			std::lock_guard<std::mutex> lock(mIOMutex);
+
+			std::cout << "Checking\t" << num << std::endl;
+		}
+
+		if (Task10::IsPrimeNumber(num))
+		{
+			ins.mPrimes.emplace_back(num);
+		}
+	}
+
+	ins.mFinishFlag = true;
 }
