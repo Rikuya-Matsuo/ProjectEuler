@@ -4,7 +4,6 @@ TaskBase::TaskBase()
 {
 }
 
-
 TaskBase::~TaskBase()
 {
 }

@@ -1,22 +1,5 @@
 ﻿#pragma once
 #include <cstdint>
-#include "TaskBase.h"
+#include "TaskHeader.h"
 
-class TaskFactory final
-{
-public:
-	~TaskFactory();
-
-	static TaskFactory & Instance()
-	{
-		static TaskFactory instance;
-		return instance;
-	}
-
-	TaskBase * Create(uint16_t id);
-
-private:
-	TaskFactory();
-};
-
-#define TASK_FACTORY TaskFactory::Instance()
+#define TASK_CREATE(id) (new Task##id())
