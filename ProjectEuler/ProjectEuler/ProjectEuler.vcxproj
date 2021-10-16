@@ -134,7 +134,6 @@
     <ClCompile Include="Task8.cpp" />
     <ClCompile Include="Task9.cpp" />
     <ClCompile Include="TaskBase.cpp" />
-    <ClCompile Include="TaskFactory.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Task10.h" />
