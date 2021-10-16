@@ -1,4 +1,4 @@
-#include "TaskBase.h"
+﻿#include "TaskBase.h"
 
 TaskBase::TaskBase()
 {

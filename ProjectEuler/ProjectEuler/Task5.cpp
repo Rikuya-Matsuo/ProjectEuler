@@ -1,4 +1,4 @@
-#include "Task5.h"
+ï»¿#include "Task5.h"
 
 Task5::Task5()
 {
@@ -13,17 +13,17 @@ void Task5::Run()
 {
 	const char divideByMax = 20;
 
-	// Š„‚ç‚ê‚é”
+	// å‰²ã‚‰ã‚Œã‚‹æ•°
 	size_t dividedNum = 0;
 
-	// —]‚è‚ª”­¶‚µ‚½ƒtƒ‰ƒO
+	// ä½™ã‚ŠãŒç™ºç”Ÿã—ãŸãƒ•ãƒ©ã‚°
 	bool remainderFlag;
 
 	do
 	{
 		++dividedNum;
 
-		// Š„‚é”B1‚Å‚È‚çí‚ÉŠ„‚èØ‚ê‚é‚½‚ß2‚©‚çƒXƒ^[ƒg
+		// å‰²ã‚‹æ•°ã€‚1ã§ãªã‚‰å¸¸ã«å‰²ã‚Šåˆ‡ã‚Œã‚‹ãŸã‚2ã‹ã‚‰ã‚¹ã‚¿ãƒ¼ãƒˆ
 		char divideBy = 2;
 
 		for (; divideBy <= divideByMax; ++divideBy)

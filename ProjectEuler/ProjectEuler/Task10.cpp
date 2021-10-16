@@ -1,4 +1,4 @@
-#include "Task10.h"
+ï»¿#include "Task10.h"
 
 Task10::Task10()
 {
@@ -14,7 +14,7 @@ void Task10::Run()
 
 	size_t cnt = 0;
 
-	// ‘f”‚Ì‚İ‚ğƒ`ƒFƒbƒN‚µ‚½‚¢‚Ì‚ÅAi‚Ì‰Šú’l‚Í2
+	// ç´ æ•°ã®ã¿ã‚’ãƒã‚§ãƒƒã‚¯ã—ãŸã„ã®ã§ã€iã®åˆæœŸå€¤ã¯2
 	for (size_t i = 2; i < below; ++i)
 	{
 		std::cout << "Checking\t\t" << i << std::endl;
@@ -27,7 +27,7 @@ void Task10::Run()
 
 bool Task10::IsPrimeNumber(size_t num)
 {
-	// x‚ª‘f”‚Å‚ ‚éğŒ‚ÍAu2`(x - 1)‚ÌŠÔ‚ÉŠ„‚èØ‚ê‚é”‚ª‚È‚¢‚±‚Æv
+	// xãŒç´ æ•°ã§ã‚ã‚‹æ¡ä»¶ã¯ã€ã€Œ2ï½(x - 1)ã®é–“ã«å‰²ã‚Šåˆ‡ã‚Œã‚‹æ•°ãŒãªã„ã“ã¨ã€
 	for (size_t i = 2; i < num; ++i)
 	{
 		if (!(num % i))

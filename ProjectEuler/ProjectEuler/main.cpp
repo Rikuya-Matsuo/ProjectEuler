@@ -1,4 +1,4 @@
-#include "TaskBase.h"
+﻿#include "TaskBase.h"
 #include "TaskFactory.h"
 
 int main(int argc, char ** argv)

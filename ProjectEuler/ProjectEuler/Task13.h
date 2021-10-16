@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 #include "TaskBase.h"
 #include <vector>
 #include <string>
@@ -14,8 +14,8 @@ public:
 	void Run() override;
 
 public:
-	// 10Œ…‚Ì”š‚Í32ƒrƒbƒg‚Ì•Ï”‚É‚Íû‚ß‚é‚±‚Æ‚ª•K‚¸‚µ‚à‰Â”\‚Å‚Í‚È‚¢‚½‚ßA
-	// ‚ ‚é’ö“x‚ÌŒ…”‚É•ª‚¯‚Ä”’l‚ğ•Û‘¶‚·‚é\‘¢‘Ì‚ğì‚é
+	// 10æ¡ã®æ•°å­—ã¯32ãƒ“ãƒƒãƒˆã®å¤‰æ•°ã«ã¯åã‚ã‚‹ã“ã¨ãŒå¿…ãšã—ã‚‚å¯èƒ½ã§ã¯ãªã„ãŸã‚ã€
+	// ã‚ã‚‹ç¨‹åº¦ã®æ¡æ•°ã«åˆ†ã‘ã¦æ•°å€¤ã‚’ä¿å­˜ã™ã‚‹æ§‹é€ ä½“ã‚’ä½œã‚‹
 	template <uint32_t digitNum>
 	struct LongDigitNumber;
 
@@ -28,14 +28,14 @@ private:
 	std::vector<LongDigitNumber_t *> mNumbers;
 
 private:
-	// mNumberStr‚©‚çŠes‚Ì”š‚ğ“Ç‚İ‚Ş
+	// mNumberStrã‹ã‚‰å„è¡Œã®æ•°å­—ã‚’èª­ã¿è¾¼ã‚€
 	void SeqLoad();
 
 	template<uint32_t digitUnit>
 	void SeqCalc(LongDigitNumber<digitUnit> & out);
 };
 
-// 10‚Ì—İæ‚Ìƒtƒ@ƒ“ƒNƒ^‚Å‚ ‚èAw”‚²‚Æ‚ÌŒ‹‰Ê‚ÌƒRƒŒƒNƒVƒ‡ƒ“‚Å‚à‚ ‚é
+// 10ã®ç´¯ä¹—ã®ãƒ•ã‚¡ãƒ³ã‚¯ã‚¿ã§ã‚ã‚Šã€æŒ‡æ•°ã”ã¨ã®çµæœã®ã‚³ãƒ¬ã‚¯ã‚·ãƒ§ãƒ³ã§ã‚‚ã‚ã‚‹
 class SectionLimitDict
 {
 public:
@@ -61,7 +61,7 @@ private:
 	static std::unordered_map<uint32_t, size_t> mPowDict;
 };
 
-// •‰‚Ì’l‚Å‚ÌŒvZ‚Í–¢‘Î‰
+// è² ã®å€¤ã§ã®è¨ˆç®—ã¯æœªå¯¾å¿œ
 template <uint32_t digitNum>
 struct Task13::LongDigitNumber
 {

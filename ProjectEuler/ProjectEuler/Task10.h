@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "TaskBase.h"
 class Task10 :
 	public TaskBase

@@ -1,4 +1,4 @@
-#include "Task13.h"
+﻿#include "Task13.h"
 
 const char * Task13::sNumberStr =
 	"37107287533902102798797998220837590246510135740250\n\

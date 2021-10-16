@@ -1,4 +1,4 @@
-#include "Task6.h"
+ï»¿#include "Task6.h"
 #include <cmath>
 
 
@@ -15,7 +15,7 @@ void Task6::Run()
 {
 	const size_t till = 100;
 
-	// “ñæ‚µ‚½‚à‚Ì‚ğ‘«‚·
+	// äºŒä¹—ã—ãŸã‚‚ã®ã‚’è¶³ã™
 	int sqrSum = 0;
 	for (size_t i = 0; i < till; ++i)
 	{
@@ -25,7 +25,7 @@ void Task6::Run()
 	}
 
 
-	// ‘«‚µ‚½‚à‚Ì‚ğ“ñæ‚·‚é
+	// è¶³ã—ãŸã‚‚ã®ã‚’äºŒä¹—ã™ã‚‹
 	int sumSqr = 0;
 	for (size_t i = 0; i < till; ++i)
 	{

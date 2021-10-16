@@ -1,4 +1,4 @@
-#include "Task7.h"
+ï»¿#include "Task7.h"
 
 
 
@@ -17,7 +17,7 @@ void Task7::Run()
 
 	uint16_t primeNumCounter = 0;
 
-	// ‘f”‚©‚Ç‚¤‚©‚ğƒ`ƒFƒbƒN‚·‚é‘ÎÛ‚Æ‚È‚é”’l
+	// ç´ æ•°ã‹ã©ã†ã‹ã‚’ãƒã‚§ãƒƒã‚¯ã™ã‚‹å¯¾è±¡ã¨ãªã‚‹æ•°å€¤
 	size_t num = 2;
 
 	while (primeNumCounter != targetPrimeNumIndex)
@@ -31,7 +31,7 @@ void Task7::Run()
 
 bool Task7::IsPrimeNumber(size_t num)
 {
-	// x‚ª‘f”‚Å‚ ‚éğŒ‚ÍAu2`(x - 1)‚ÌŠÔ‚ÉŠ„‚èØ‚ê‚é”‚ª‚È‚¢‚±‚Æv
+	// xãŒç´ æ•°ã§ã‚ã‚‹æ¡ä»¶ã¯ã€ã€Œ2ï½(x - 1)ã®é–“ã«å‰²ã‚Šåˆ‡ã‚Œã‚‹æ•°ãŒãªã„ã“ã¨ã€
 	for (size_t i = 2; i < num; ++i)
 	{
 		if (!(num % i))

@@ -1,4 +1,4 @@
-#include "TaskFactory.h"
+﻿#include "TaskFactory.h"
 #include "TaskHeader.h"
 
 TaskBase * TaskFactory::Create(uint16_t id)
