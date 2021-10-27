@@ -1,5 +1,6 @@
 ﻿#pragma once
 #include <iostream>
+#include "MathUnit.h"
 
 class TaskBase
 {
