@@ -9,6 +9,7 @@
 #include "Task12.h"
 #include "Task13.h"
 #include "Task14.h"
+#include "Task15.h"
 
 #define TASK_CREATE_IMPL() new Task
 #define TASK_CREATE(id) (TASK_CREATE_IMPL()id())

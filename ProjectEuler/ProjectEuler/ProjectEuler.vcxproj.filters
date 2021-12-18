@@ -57,6 +57,9 @@
     <ClCompile Include="Task14.cpp">
       <Filter>ソース ファイル\Task</Filter>
     </ClCompile>
+    <ClCompile Include="Task15.cpp">
+      <Filter>ソース ファイル\Task</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TaskBase.h">
@@ -97,6 +100,9 @@
     </ClInclude>
     <ClInclude Include="MathUnit.h">
       <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Task15.h">
+      <Filter>ヘッダー ファイル\Task</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
