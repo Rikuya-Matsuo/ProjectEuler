@@ -62,9 +62,6 @@
     <ClInclude Include="TaskBase.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="TaskFactory.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="TaskHeader.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>

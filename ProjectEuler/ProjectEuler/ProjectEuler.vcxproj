@@ -149,7 +149,6 @@
     <ClInclude Include="Task8.h" />
     <ClInclude Include="Task9.h" />
     <ClInclude Include="TaskBase.h" />
-    <ClInclude Include="TaskFactory.h" />
     <ClInclude Include="TaskHeader.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
