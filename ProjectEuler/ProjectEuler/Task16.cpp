@@ -45,6 +45,16 @@ void Task16::BigNum::PrintValue() const
 	{
 		valueStr.insert(0, std::to_string(sect));
 	}
+	
+	if (mMinus)
+	{
+		valueStr.insert(0, "-");
+	}
+
+	if (valueStr.empty())
+	{
+		valueStr = "0";
+	}
 
 	std::cout << "Value : " << valueStr << std::endl;
 }
