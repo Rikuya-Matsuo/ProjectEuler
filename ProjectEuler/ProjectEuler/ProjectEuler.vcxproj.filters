@@ -60,6 +60,9 @@
     <ClCompile Include="Task15.cpp">
       <Filter>ソース ファイル\Task</Filter>
     </ClCompile>
+    <ClCompile Include="Task16.cpp">
+      <Filter>ソース ファイル\Task</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TaskBase.h">
@@ -102,6 +105,9 @@
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="Task15.h">
+      <Filter>ヘッダー ファイル\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="Task16.h">
       <Filter>ヘッダー ファイル\Task</Filter>
     </ClInclude>
   </ItemGroup>
