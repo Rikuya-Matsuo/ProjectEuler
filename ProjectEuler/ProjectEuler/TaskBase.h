@@ -24,3 +24,5 @@ public:
 
 	virtual void Run() = 0;
 };
+
+#define STD_COUT(str, var) std::cout << str << var << std::endl;
