@@ -1,6 +1,11 @@
 ﻿#pragma once
 #include <iostream>
 #include <cstdint>
+#include <vector>
+#include <list>
+#include <string>
+#include <unordered_map>
+#include <unordered_set>
 #include "MathUnit.h"
 
 #define USING_INT_TYPE(bitnum)\
