@@ -19,101 +19,113 @@
     <Filter Include="ヘッダー ファイル\Task">
       <UniqueIdentifier>{0a619300-09b0-48c5-b7d3-3199c73de725}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Task\1-10">
+      <UniqueIdentifier>{49d0df72-56a8-4ef3-807f-9379d738c204}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Task\1-10">
+      <UniqueIdentifier>{d7b187e7-40be-4591-82b9-e155d352df5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Task\11-20">
+      <UniqueIdentifier>{69d4b3f0-4478-4436-8d7e-f40c3674c6e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Task\11-20">
+      <UniqueIdentifier>{80dc2ff1-8a2e-42e8-bd28-dd4db6410b1e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="TaskBase.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
     <ClCompile Include="Task5.cpp">
-      <Filter>ソース ファイル\Task</Filter>
+      <Filter>ソース ファイル\Task\1-10</Filter>
     </ClCompile>
     <ClCompile Include="Task6.cpp">
-      <Filter>ソース ファイル\Task</Filter>
+      <Filter>ソース ファイル\Task\1-10</Filter>
     </ClCompile>
     <ClCompile Include="Task7.cpp">
-      <Filter>ソース ファイル\Task</Filter>
+      <Filter>ソース ファイル\Task\1-10</Filter>
     </ClCompile>
     <ClCompile Include="Task8.cpp">
-      <Filter>ソース ファイル\Task</Filter>
+      <Filter>ソース ファイル\Task\1-10</Filter>
     </ClCompile>
     <ClCompile Include="Task9.cpp">
-      <Filter>ソース ファイル\Task</Filter>
+      <Filter>ソース ファイル\Task\1-10</Filter>
     </ClCompile>
     <ClCompile Include="Task10.cpp">
-      <Filter>ソース ファイル\Task</Filter>
+      <Filter>ソース ファイル\Task\1-10</Filter>
     </ClCompile>
     <ClCompile Include="Task11.cpp">
-      <Filter>ソース ファイル\Task</Filter>
+      <Filter>ソース ファイル\Task\11-20</Filter>
     </ClCompile>
     <ClCompile Include="Task12.cpp">
-      <Filter>ソース ファイル\Task</Filter>
+      <Filter>ソース ファイル\Task\11-20</Filter>
     </ClCompile>
     <ClCompile Include="Task13.cpp">
-      <Filter>ソース ファイル\Task</Filter>
+      <Filter>ソース ファイル\Task\11-20</Filter>
     </ClCompile>
     <ClCompile Include="Task14.cpp">
-      <Filter>ソース ファイル\Task</Filter>
+      <Filter>ソース ファイル\Task\11-20</Filter>
     </ClCompile>
     <ClCompile Include="Task15.cpp">
-      <Filter>ソース ファイル\Task</Filter>
+      <Filter>ソース ファイル\Task\11-20</Filter>
     </ClCompile>
     <ClCompile Include="Task16.cpp">
-      <Filter>ソース ファイル\Task</Filter>
+      <Filter>ソース ファイル\Task\11-20</Filter>
     </ClCompile>
     <ClCompile Include="Task17.cpp">
+      <Filter>ソース ファイル\Task\11-20</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskBase.cpp">
       <Filter>ソース ファイル\Task</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="TaskBase.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="TaskHeader.h">
       <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="Task6.h">
-      <Filter>ヘッダー ファイル\Task</Filter>
-    </ClInclude>
-    <ClInclude Include="Task5.h">
-      <Filter>ヘッダー ファイル\Task</Filter>
-    </ClInclude>
-    <ClInclude Include="Task7.h">
-      <Filter>ヘッダー ファイル\Task</Filter>
-    </ClInclude>
-    <ClInclude Include="Task8.h">
-      <Filter>ヘッダー ファイル\Task</Filter>
-    </ClInclude>
-    <ClInclude Include="Task9.h">
-      <Filter>ヘッダー ファイル\Task</Filter>
-    </ClInclude>
-    <ClInclude Include="Task10.h">
-      <Filter>ヘッダー ファイル\Task</Filter>
-    </ClInclude>
-    <ClInclude Include="Task11.h">
-      <Filter>ヘッダー ファイル\Task</Filter>
-    </ClInclude>
-    <ClInclude Include="Task12.h">
-      <Filter>ヘッダー ファイル\Task</Filter>
-    </ClInclude>
-    <ClInclude Include="Task13.h">
-      <Filter>ヘッダー ファイル\Task</Filter>
-    </ClInclude>
-    <ClInclude Include="Task14.h">
-      <Filter>ヘッダー ファイル\Task</Filter>
     </ClInclude>
     <ClInclude Include="MathUnit.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
+    <ClInclude Include="Task5.h">
+      <Filter>ヘッダー ファイル\Task\1-10</Filter>
+    </ClInclude>
+    <ClInclude Include="Task6.h">
+      <Filter>ヘッダー ファイル\Task\1-10</Filter>
+    </ClInclude>
+    <ClInclude Include="Task7.h">
+      <Filter>ヘッダー ファイル\Task\1-10</Filter>
+    </ClInclude>
+    <ClInclude Include="Task8.h">
+      <Filter>ヘッダー ファイル\Task\1-10</Filter>
+    </ClInclude>
+    <ClInclude Include="Task9.h">
+      <Filter>ヘッダー ファイル\Task\1-10</Filter>
+    </ClInclude>
+    <ClInclude Include="Task10.h">
+      <Filter>ヘッダー ファイル\Task\1-10</Filter>
+    </ClInclude>
+    <ClInclude Include="Task11.h">
+      <Filter>ヘッダー ファイル\Task\11-20</Filter>
+    </ClInclude>
+    <ClInclude Include="Task12.h">
+      <Filter>ヘッダー ファイル\Task\11-20</Filter>
+    </ClInclude>
+    <ClInclude Include="Task13.h">
+      <Filter>ヘッダー ファイル\Task\11-20</Filter>
+    </ClInclude>
+    <ClInclude Include="Task14.h">
+      <Filter>ヘッダー ファイル\Task\11-20</Filter>
+    </ClInclude>
     <ClInclude Include="Task15.h">
-      <Filter>ヘッダー ファイル\Task</Filter>
+      <Filter>ヘッダー ファイル\Task\11-20</Filter>
     </ClInclude>
     <ClInclude Include="Task16.h">
-      <Filter>ヘッダー ファイル\Task</Filter>
+      <Filter>ヘッダー ファイル\Task\11-20</Filter>
     </ClInclude>
     <ClInclude Include="Task17.h">
+      <Filter>ヘッダー ファイル\Task\11-20</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskBase.h">
       <Filter>ヘッダー ファイル\Task</Filter>
     </ClInclude>
   </ItemGroup>
