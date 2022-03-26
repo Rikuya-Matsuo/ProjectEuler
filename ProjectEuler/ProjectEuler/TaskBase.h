@@ -6,6 +6,8 @@
 #include <string>
 #include <unordered_map>
 #include <unordered_set>
+#include <fstream>
+#include <sstream>
 #include "MathUnit.h"
 
 #define USING_INT_TYPE(bitnum)\
