@@ -134,5 +134,8 @@
     <ClInclude Include="Task18.h">
       <Filter>ヘッダー ファイル\Task\11-20</Filter>
     </ClInclude>
+    <ClInclude Include="IntType.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -141,6 +141,7 @@
     <ClCompile Include="TaskBase.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="IntType.h" />
     <ClInclude Include="MathUnit.h" />
     <ClInclude Include="Task10.h" />
     <ClInclude Include="Task11.h" />
