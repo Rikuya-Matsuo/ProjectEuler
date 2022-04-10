@@ -81,6 +81,9 @@
     <ClCompile Include="Task18.cpp">
       <Filter>ソース ファイル\Task\11-20</Filter>
     </ClCompile>
+    <ClCompile Include="Task19.cpp">
+      <Filter>ソース ファイル\Task\11-20</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TaskHeader.h">
@@ -132,6 +135,9 @@
       <Filter>ヘッダー ファイル\Task</Filter>
     </ClInclude>
     <ClInclude Include="Task18.h">
+      <Filter>ヘッダー ファイル\Task\11-20</Filter>
+    </ClInclude>
+    <ClInclude Include="Task19.h">
       <Filter>ヘッダー ファイル\Task\11-20</Filter>
     </ClInclude>
     <ClInclude Include="IntType.h">
