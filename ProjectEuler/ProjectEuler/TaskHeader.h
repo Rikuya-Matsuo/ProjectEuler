@@ -7,10 +7,12 @@
 #define TASK_ID 20
 
 // タスクcppファイルのインクルード
-#define TO_STRING(x) #x
-#define TO_STRING_AFTER_EXTEND(x) TO_STRING(x)
+#define TO_STRING_IMPL(x) #x
+#define TO_STRING(x) TO_STRING_IMPL(x)
 
 #define TASK_FILENAME_IMPL(id) Task##id##.h
 #define TASK_FILENAME(id) TASK_FILENAME_IMPL(id)
 
-#include TO_STRING_AFTER_EXTEND(TASK_FILENAME(TASK_ID))
+#define INCLUDE_TASK_FILE TO_STRING(TASK_FILENAME(TASK_ID))
+
+#include INCLUDE_TASK_FILE
