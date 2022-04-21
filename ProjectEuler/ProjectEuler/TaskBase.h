@@ -19,4 +19,5 @@ public:
 	virtual void Run() = 0;
 };
 
-#define STD_COUT(str, var) std::cout << str << var << std::endl;
+#define STD_COUT(str, var) std::cout << str << var << std::endl
+#define COUT_ANSWER(ans) STD_COUT("Answer : ", ans)
