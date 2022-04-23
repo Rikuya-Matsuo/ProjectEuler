@@ -4,7 +4,7 @@
 #define TASK_CREATE(id) TASK_CREATE_IMPL(id)
 
 // タスクID。ここを変更して動かすタスクを変える。
-#define TASK_ID 20
+#define TASK_ID 21
 
 // タスクcppファイルのインクルード
 #define TO_STRING_IMPL(x) #x
