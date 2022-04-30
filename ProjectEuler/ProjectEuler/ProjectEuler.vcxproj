@@ -136,6 +136,7 @@
     <ClCompile Include="Task19.cpp" />
     <ClCompile Include="Task20.cpp" />
     <ClCompile Include="Task21.cpp" />
+    <ClCompile Include="Task22.cpp" />
     <ClCompile Include="Task5.cpp" />
     <ClCompile Include="Task6.cpp" />
     <ClCompile Include="Task7.cpp" />
@@ -158,6 +159,7 @@
     <ClInclude Include="Task19.h" />
     <ClInclude Include="Task20.h" />
     <ClInclude Include="Task21.h" />
+    <ClInclude Include="Task22.h" />
     <ClInclude Include="Task5.h" />
     <ClInclude Include="Task6.h" />
     <ClInclude Include="Task7.h" />
