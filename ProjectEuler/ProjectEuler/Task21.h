@@ -10,14 +10,11 @@ public:
 	void Run() override;
 
 private:
-	using NumType = uint32;
-	using ProperDivisorMap = std::unordered_map<NumType, std::unordered_set<NumType>>;
-	ProperDivisorMap mProperDivisorMap;
+	static const size_t mLimit;
 
-	void SetupProperDivisor(NumType limit);
-
+private:
 	size_t CalcAnswer();
 
-	size_t CalcSumOfProperDivisor(NumType num);
-	size_t CalcSumOfProperDivisor(const std::unordered_set<NumType>& properDivisors);
+	size_t CalcSumOfProperDivisor(size_t num);
+	size_t CalcSumOfProperDivisor(const std::unordered_set<size_t>& properDivisors);
 };

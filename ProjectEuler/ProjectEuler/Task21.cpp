@@ -1,9 +1,11 @@
 ﻿#include "Task21.h"
+#include "ProperDivisorManager.h"
+
+const size_t Task21::mLimit = 10000;
 
 Task21::Task21()
 {
-	const NumType num = 10000;
-	SetupProperDivisor(num);
+	ProperDivisorManager::GetInstance()->Setup(mLimit - 1);
 }
 
 Task21::~Task21()
@@ -17,58 +19,10 @@ void Task21::Run()
 	COUT_ANSWER(ans);
 }
 
-void Task21::SetupProperDivisor(NumType limit)
-{
-	// 約数を求める関係上、2からスタート
-	for (NumType i = 2; i < limit; ++i)
-	{
-		bool makeSetFlg = false;
-		for (NumType divisorCandidate = i - 1; divisorCandidate >= 2; --divisorCandidate)
-		{
-			if (i % divisorCandidate == 0)
-			{
-				makeSetFlg = true;
-
-				auto divisorList = mProperDivisorMap.find(divisorCandidate);
-				if (divisorList != mProperDivisorMap.end())
-				{
-					// 既に約数候補の約数を算出している場合、それに約数候補自体を追加したものがiの約数である
-					mProperDivisorMap[i].insert(divisorList->second.begin(), divisorList->second.end());
-				}
-				mProperDivisorMap[i].insert(divisorCandidate);
-
-				// 先にヒットしたものの中に含まれない約数を追加する。
-				// 例えばi = 6のとき先にヒットするのは3だが、3の約数には2が含まれない。そのため2を追加する必要がある。
-				// 追加が必要な数の累乗の値も必要ならここで追加しなければならない。
-				auto mapCpy = mProperDivisorMap[i];
-				NumType additionalDivisor = (i / divisorCandidate);
-				while (i % additionalDivisor == 0 && i != additionalDivisor)
-				{
-					for (auto originalDivisor : mapCpy)
-					{
-						auto add = originalDivisor * additionalDivisor;
-						if (add < i && i % add == 0)
-						{
-							mProperDivisorMap[i].insert(add);
-						}
-					}
-					additionalDivisor *= (i / divisorCandidate);
-				}
-				break;
-			}
-		}
-
-		if (!makeSetFlg)
-		{
-			mProperDivisorMap[i].insert(1);
-		}
-	}
-}
-
 size_t Task21::CalcAnswer()
 {
 	// 友愛数である組み合わせを全て求める
-	using AmicableNumPair = std::pair<NumType, NumType>;
+	using AmicableNumPair = std::pair<size_t, size_t>;
 	struct HashFunc
 	{
 		size_t operator()(const AmicableNumPair& pair) const
@@ -82,24 +36,23 @@ size_t Task21::CalcAnswer()
 	char buf[64];
 
 	std::unordered_set<AmicableNumPair, HashFunc> amicableNums;
-	for (const auto& data : mProperDivisorMap)
+	for (size_t i = 2; i < mLimit; ++i)
 	{
-		const auto num = data.first;
-		const auto sumPrDiv = CalcSumOfProperDivisor(data.second);
-		const auto sumPrDivNT = (NumType)sumPrDiv;
+		const auto num = i;
+		const auto sumPrDiv = CalcSumOfProperDivisor(num);
 
-		if (num != sumPrDivNT && CalcSumOfProperDivisor(sumPrDivNT) == (size_t)num)
+		if (num != sumPrDiv && CalcSumOfProperDivisor(sumPrDiv) == num)
 		{
 			// numとsumPrDivは友愛数である
-			// 同じ組み合わせが2回登録されてしまうため、numが小さい時だけ処理
-			if (num < sumPrDivNT)
+			// 同じ組み合わせが2回登録されてしまうため、numの方が小さい時だけ処理
+			if (num < sumPrDiv)
 			{
 				// ログ出力
-				sprintf_s(buf, "(%d, %d)", num, sumPrDivNT);
+				sprintf_s(buf, "(%zu, %zu)", num, sumPrDiv);
 				STD_COUT("Amicable Num : ", buf);
 
 				// コンテナ追加
-				amicableNums.insert(std::make_pair(num, sumPrDivNT));
+				amicableNums.insert(std::make_pair(num, sumPrDiv));
 			}
 		}
 	}
@@ -114,13 +67,13 @@ size_t Task21::CalcAnswer()
 	return sumAmicableNums;
 }
 
-size_t Task21::CalcSumOfProperDivisor(NumType num)
+size_t Task21::CalcSumOfProperDivisor(size_t num)
 {
-	auto itr = mProperDivisorMap.find(num);
-	return (itr != mProperDivisorMap.end()) ? CalcSumOfProperDivisor(itr->second) : 0;
+	auto pd = ProperDivisorManager::GetInstance()->GetProperDivisors(num);
+	return (pd) ? CalcSumOfProperDivisor(*pd) : 0;
 }
 
-size_t Task21::CalcSumOfProperDivisor(const std::unordered_set<NumType>& properDivisors)
+size_t Task21::CalcSumOfProperDivisor(const std::unordered_set<size_t>& properDivisors)
 {
 	size_t sum = 0;
 	for (auto divisor : properDivisors)

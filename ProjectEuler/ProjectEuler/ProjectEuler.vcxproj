@@ -124,6 +124,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="ProperDivisorManager.cpp" />
     <ClCompile Include="Task10.cpp" />
     <ClCompile Include="Task11.cpp" />
     <ClCompile Include="Task12.cpp" />
@@ -147,6 +148,7 @@
   <ItemGroup>
     <ClInclude Include="IntType.h" />
     <ClInclude Include="MathUnit.h" />
+    <ClInclude Include="ProperDivisorManager.h" />
     <ClInclude Include="Task10.h" />
     <ClInclude Include="Task11.h" />
     <ClInclude Include="Task12.h" />
