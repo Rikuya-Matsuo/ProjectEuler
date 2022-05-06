@@ -108,6 +108,9 @@
     <ClCompile Include="ProperDivisorManager.cpp">
       <Filter>ソース ファイル\Math</Filter>
     </ClCompile>
+    <ClCompile Include="Task23.cpp">
+      <Filter>ソース ファイル\Task\21-30</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TaskHeader.h">
@@ -178,6 +181,9 @@
     </ClInclude>
     <ClInclude Include="MathUnit.h">
       <Filter>ヘッダー ファイル\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Task23.h">
+      <Filter>ヘッダー ファイル\Task\21-30</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
