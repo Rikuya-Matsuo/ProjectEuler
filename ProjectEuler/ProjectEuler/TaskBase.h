@@ -4,9 +4,12 @@
 #include <list>
 #include <string>
 #include <unordered_map>
+#include <map>
 #include <unordered_set>
+#include <set>
 #include <fstream>
 #include <sstream>
+#include <algorithm>
 #include "MathUnit.h"
 #include "IntType.h"
 
