@@ -23,7 +23,6 @@ Task24::~Task24()
 void Task24::Run()
 {
 	std::string sampleString = "0123456789";
-	std::string sampleString2 = "0123";
 
 	makePermutationList(sampleString);
 
