@@ -114,6 +114,9 @@
     <ClCompile Include="Task24.cpp">
       <Filter>ソース ファイル\Task\21-30</Filter>
     </ClCompile>
+    <ClCompile Include="Task25.cpp">
+      <Filter>ソース ファイル\Task\21-30</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TaskHeader.h">
@@ -189,6 +192,9 @@
       <Filter>ヘッダー ファイル\Task\21-30</Filter>
     </ClInclude>
     <ClInclude Include="Task24.h">
+      <Filter>ヘッダー ファイル\Task\21-30</Filter>
+    </ClInclude>
+    <ClInclude Include="Task25.h">
       <Filter>ヘッダー ファイル\Task\21-30</Filter>
     </ClInclude>
   </ItemGroup>
