@@ -124,6 +124,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="PrimeManager.cpp" />
     <ClCompile Include="ProperDivisorManager.cpp" />
     <ClCompile Include="Task10.cpp" />
     <ClCompile Include="Task11.cpp" />
@@ -142,6 +143,7 @@
     <ClCompile Include="Task24.cpp" />
     <ClCompile Include="Task25.cpp" />
     <ClCompile Include="Task26.cpp" />
+    <ClCompile Include="Task27.cpp" />
     <ClCompile Include="Task5.cpp" />
     <ClCompile Include="Task6.cpp" />
     <ClCompile Include="Task7.cpp" />
@@ -152,6 +154,7 @@
   <ItemGroup>
     <ClInclude Include="IntType.h" />
     <ClInclude Include="MathUnit.h" />
+    <ClInclude Include="PrimeManager.h" />
     <ClInclude Include="ProperDivisorManager.h" />
     <ClInclude Include="Task10.h" />
     <ClInclude Include="Task11.h" />
@@ -170,6 +173,7 @@
     <ClInclude Include="Task24.h" />
     <ClInclude Include="Task25.h" />
     <ClInclude Include="Task26.h" />
+    <ClInclude Include="Task27.h" />
     <ClInclude Include="Task5.h" />
     <ClInclude Include="Task6.h" />
     <ClInclude Include="Task7.h" />

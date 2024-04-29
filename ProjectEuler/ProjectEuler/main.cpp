@@ -1,5 +1,6 @@
 ﻿#include "TaskHeader.h"
 #include "ProperDivisorManager.h"
+#include "PrimeManager.h"
 
 int main(int argc, char ** argv)
 {
@@ -27,6 +28,7 @@ int main(int argc, char ** argv)
 
 	// 各種ユーティリティマネージャのメモリ解放
 	ProperDivisorManager::DeleteInstance();
+	PrimeManager::DeleteInstance();
 
 	return 0;
 }
